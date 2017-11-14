@@ -26,5 +26,13 @@
         $("p"); //Select p element
         $(".promo"); //Select element with class = "promo"
         $("#destinations"); // Select element with id = "destinations"
+        $("#destinations li"); // descendant selector
+        $("#destinations > li"); // child selector
+        $(".promo, #france"); // multiple selector
+        //pseudo selectors
+        $("#destinations li:first"); // select 1st li
+        $("#destinations li:last"); // select 2nd li
+        $("#destinations li:even"); // select all li that are in even position
+        $("#destinations li:odd"); // select all li that are in odd position
     });
 </script>
