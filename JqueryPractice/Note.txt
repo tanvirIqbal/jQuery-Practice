@@ -1,0 +1,1 @@
+﻿# We need to make sure DOM has finished loading the HTML content before we can reliably use jQuery.
