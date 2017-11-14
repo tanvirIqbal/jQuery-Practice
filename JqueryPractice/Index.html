@@ -34,5 +34,16 @@
         $("#destinations li:last"); // select 2nd li
         $("#destinations li:even"); // select all li that are in even position
         $("#destinations li:odd"); // select all li that are in odd position
+        //Traversing : faster than above selector
+        $("#destinations").find("li"); // = $("#destinations li");
+        $("li").first(); 
+        $("li").last(); 
+        $("li").odd(); 
+        $("li").even(); 
+        $("li").first().next(); 
+        $("li").first().next().prev();
+        $("li").first().parent();
+        $("#destinations").children("li"); // = $("#destinations > li");
+
     });
 </script>
