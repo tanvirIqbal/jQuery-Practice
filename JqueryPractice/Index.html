@@ -49,16 +49,22 @@
         $("li").first().parent();
         $("#destinations").children("li"); // = $("#destinations > li");
 
-        var price = $('<p>From $399.99</p>'); //Create a new node/element
+        //var price = $('<p>From $399.99</p>'); //Create a new node/element
         //$('.vacation').before(price); // Add price node before li with class vacation (reference node)
         //$('.vacation').after(price); // Add price node after li with class vacation (reference node)
         //$('.vacation').prepend(price); // Add price node as first child of li with class vacation (reference node)
-        $('.vacation').append(price); // Add price node as last child of li with class vacation (reference node)
+        //$('.vacation').append(price); // Add price node as last child of li with class vacation (reference node)
 
         //price.insertBefore('.vacation'); // Add price node before li with class vacation (reference node)
         //price.insertAfter('.vacation'); // Add price node after li with class vacation (reference node)
         //price.prependTo('.vacation'); // Add price node as first child of li with class vacation (reference node)
-        price.appendTo('.vacation'); // Add price node as last child of li with class vacation (reference node)
+        //price.appendTo('.vacation'); // Add price node as last child of li with class vacation (reference node)
+
+        $('button').on("click", function () {
+            var price = $('<p>From $399.99</p>');
+            price.appendTo('.vacation');
+            $('button').remove();
+        });
         console.log(price);
 
     });
