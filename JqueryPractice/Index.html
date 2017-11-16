@@ -54,6 +54,11 @@
         //$('.vacation').after(price); // Add price node after li with class vacation (reference node)
         //$('.vacation').prepend(price); // Add price node as first child of li with class vacation (reference node)
         $('.vacation').append(price); // Add price node as last child of li with class vacation (reference node)
+
+        //price.insertBefore('.vacation'); // Add price node before li with class vacation (reference node)
+        //price.insertAfter('.vacation'); // Add price node after li with class vacation (reference node)
+        //price.prependTo('.vacation'); // Add price node as first child of li with class vacation (reference node)
+        price.appendTo('.vacation'); // Add price node as last child of li with class vacation (reference node)
         console.log(price);
 
     });
