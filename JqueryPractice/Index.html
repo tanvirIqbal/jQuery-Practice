@@ -18,7 +18,12 @@
         </li>
         <li class="promo">Rio</li>
     </ul>
-    <input type="submit"  name="Submit" value="Submit" />
+    <ul>
+        <li class="vacation">
+            <h2>Paris Vacation</h2>
+            <button>Get Price</button>
+        </li>
+    </ul>
 </body>
 </html>
 <script>
@@ -37,15 +42,16 @@
         $("#destinations li:odd"); // select all li that are in odd position
         //Traversing : faster than above selector
         $("#destinations").find("li"); // = $("#destinations li");
-        $("li").first(); 
-        $("li").last(); 
-        $("li").odd(); 
-        $("li").even(); 
-        $("li").first().next(); 
+        $("li").first();
+        $("li").last();
+        $("li").odd();
+        $("li").even();
+        $("li").first().next();
         $("li").first().next().prev();
         $("li").first().parent();
         $("#destinations").children("li"); // = $("#destinations > li");
 
         var price = $('<p>From $399.99</p>');
+
     });
 </script>
