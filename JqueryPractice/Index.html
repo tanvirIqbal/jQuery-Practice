@@ -44,14 +44,17 @@
         $("#destinations").find("li"); // = $("#destinations li");
         $("li").first();
         $("li").last();
-        $("li").odd();
-        $("li").even();
         $("li").first().next();
         $("li").first().next().prev();
         $("li").first().parent();
         $("#destinations").children("li"); // = $("#destinations > li");
 
-        var price = $('<p>From $399.99</p>');
+        var price = $('<p>From $399.99</p>'); //Create a new node/element
+        //$('.vacation').before(price); // Add price node before li with class vacation (reference node)
+        //$('.vacation').after(price); // Add price node after li with class vacation (reference node)
+        //$('.vacation').prepend(price); // Add price node as first child of li with class vacation (reference node)
+        $('.vacation').append(price); // Add price node as last child of li with class vacation (reference node)
+        console.log(price);
 
     });
 </script>
