@@ -23,6 +23,14 @@
             <h2>Paris Vacation</h2>
             <button>Get Price</button>
         </li>
+        <li class="vacation">
+            <h2>Paris Vacation</h2>
+            <button>Get Price</button>
+        </li>
+        <li class="vacation">
+            <h2>Paris Vacation</h2>
+            <button>Get Price</button>
+        </li>
     </ul>
 </body>
 </html>
@@ -62,8 +70,8 @@
 
         $('button').on("click", function () {
             var price = $('<p>From $399.99</p>');
-            price.appendTo('.vacation');
-            $('button').remove();
+            $(this).closest('.vacation').append(price); // closest will find the 1st ancestor
+            $(this).remove(); // This will remove the button that raise the event.
         });
         console.log(price);
 
